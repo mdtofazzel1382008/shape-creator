@@ -2,7 +2,6 @@ import pygame, sys
 from pygame.locals import *
 
 pygame.init()
-
 DISPLAYSURF = pygame.display.set_mode((800, 600))
 
 radius = 100.0
@@ -31,6 +30,7 @@ def color_edit():
     for value in range(rgb_values):
         shape_color.append(int(input("Enter a color value: ")))
     tuple(shape_color)
+    
 shape_input = input("Enter a name of a shape from the following: \ncircle\nrectangle\nsquare\nparallelogram\nyour choice: ")
 
 if shape_input == "circle":
